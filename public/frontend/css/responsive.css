@@ -1,0 +1,63 @@
+.slicknav_menu {
+    display: none
+}
+#menu {
+    display: block
+}
+
+@media screen and (max-width: 991px) {
+	.single-achievement, .studyAbroadBox {
+		margin-bottom: 30px;
+	}
+}/* max-width: 991 close */
+
+
+
+@media screen and (max-width: 768px) {
+	.slicknav_menu {
+	  background: transparent;
+	  position: absolute;
+	  right: 14px;
+	  top: 15px;
+	  z-index: 5;
+	}
+	.slicknav_nav a {
+	  color: #fff;
+	}
+	.slicknav_btn {
+	  background-color: #92278F;
+	}
+	.slicknav_nav {
+	  width: 250px;
+	  background: #92278F;
+	}
+	.slicknav_menu {
+	  display: block;
+	}
+	#menu {
+	  display: none
+	}
+	.hidden-sm{
+		display: none;
+	}
+	.slicknav_nav .icofont-caret-down {
+		display: none;
+	}
+}/* max-width: 768 close */
+
+
+@media screen and (max-width: 575px) {
+.hidden-xs{
+	display: none;
+}
+
+}/* max-width: 575 close */
+
+@media screen and (max-width: 480px) {
+
+
+}/* max-width: 480 close */
+
+@media screen and (max-width: 375px) {
+
+}/* max-width: 375 close */
