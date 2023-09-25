@@ -9,6 +9,7 @@ use App\Models\User;
 use Exception;
 use Illuminate\Contracts\View\View;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Session;
@@ -23,6 +24,11 @@ class UserController extends Controller
     public function survey($id){
         $data = User::findOrFail($id);
         return view('backend.user.survey',compact('data'));
+    }
+
+    public function survey_result(){ 
+        $data = User::findOrFail(Auth::user()->id);
+        return view('backend.user.survey_result',compact('data'));
     }
 
     public function registerPage(): View

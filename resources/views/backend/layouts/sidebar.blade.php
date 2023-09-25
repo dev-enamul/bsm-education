@@ -1,6 +1,6 @@
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
-    <a href="index3.html" class="brand-link">
+    <a href="{{route('dashboard')}}" class="brand-link">
       <img src="{{ asset('frontend/images/logo2.png') }}" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
       <span class="brand-text font-weight-light">BSM Education</span>
     </a>
@@ -20,8 +20,8 @@
 
       <!-- Sidebar Menu -->
       <nav class="mt-2">
-        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-         
+        @if(Auth::user()->role == '1')
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false"> 
            <li class="nav-item {{ (request()->is('admin/destination*')) ? 'menu-open' : '' }}">
             <a href="#" class="nav-link {{ (request()->is('admin/destination*')) ? 'active' : '' }}"> 
               <i class="nav-icon fa-solid fa-location-dot"></i>
@@ -143,6 +143,19 @@
             </a>
           </li>  --}}
         </ul>
+        @else
+
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false"> 
+          <li class="nav-item ">
+            <a href="{{ route('survey.result') }}" class="nav-link @yield('survey.result')">
+              <i class="fa fa-user nav-icon" aria-hidden="true"></i>
+              <p>
+                Qualification Report
+              </p>
+            </a>
+          </li> 
+        </ul>
+        @endif
       </nav>
       <!-- /.sidebar-menu -->
     </div>

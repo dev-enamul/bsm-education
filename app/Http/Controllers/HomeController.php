@@ -8,6 +8,7 @@ use App\Models\Feature;
 use App\Models\Partner;
 use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class HomeController extends Controller
 {
@@ -32,6 +33,7 @@ class HomeController extends Controller
         $total_destination = Destination::count();  
         $total_contact_message = Contact::count();
         $total_partner = Partner::count();
-        return view('backend.index',compact('total_user','total_destination','total_contact_message','total_partner'));  
+        $data = User::findOrFail(Auth::user()->id);
+        return view('backend.index',compact('total_user','total_destination','total_contact_message','total_partner','data'));  
     }
 }

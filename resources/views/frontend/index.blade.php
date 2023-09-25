@@ -20,8 +20,7 @@
         <div class="row">
             <div class="col-sm-12 pb-3">
                 <div class="title relative">
-                    <h2>What We Offer</h2>
-                   
+                    <h2>What We Offer</h2> 
                 </div>
             </div> 
 
@@ -129,7 +128,7 @@
                 </div> 
 
                 <div class="d-flex">
-                    {{--  <button class="button-1 mr-2"><a href="{{route('login')}}">Login</a> </button>   --}}
+                    <button class="button-1 mr-2"><a href="{{route('login')}}">Login</a> </button> 
                     <button class="button-1"><a href="{{route('user.register')}}">Register</a> </button>
                 </div>
             </div> 

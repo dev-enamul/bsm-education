@@ -39,7 +39,7 @@ Auth::routes();
 
 Route::group(['prefix' => '/admin', 'middleware' => ['auth']], function () {
 
-    Route::get('dashboard',[HomeController::class,'index'])->name('home');
+    Route::get('dashboard',[HomeController::class,'index'])->name('dashboard');
     Route::resource('expense', ExpenseController::class);
  
 
@@ -63,6 +63,8 @@ Route::group(['prefix' => '/admin', 'middleware' => ['auth']], function () {
     Route::resource('team', TeamController::class);
     Route::get('users',[UserController::class,'index'])->name('user.index');
     Route::get('user/survey/{id}',[UserController::class,'survey'])->name('user.survey');
+
+    Route::get('survey/result/',[UserController::class,'survey_result'])->name('survey.result');
 
     //General Setting Section
     Route::get('/generalsettings', [GeneralSettingController::class, 'index'])->name('generalsetting.index');

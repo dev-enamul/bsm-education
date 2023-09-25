@@ -2,29 +2,9 @@
 @section('user.index','active')
 @section('menu','menu-open')
 @section('content')
-<div class="card">   
-    <div class="card-header">   
-        <table id="" class="table table-bordered table-striped mt-2">
-            <thead>
-            <tr>
-                <th style="width: 15%">Name</th>
-                <th style="width: 15%">Image</th>
-                <th style="width: 15%">Phone</th> 
-                <th style="width:35%">Address</th>  
-            </tr>
-            </thead>
-            <tbody>
-                <tr>                        
-                    <td><b>{{ $data->name }}</b></td>
-                    <td>{{$data->email}}</td> 
-                    <td>{{$data->phone}}</td> 
-                    <td>{{$data->address}}</td>  
-                </tr> 
-            </tbody>
-        </table>
-    </div>
-    <div class="card-body">
-      
+<div class="card"> 
+      <h3 class="p-3">Your Survey Report</h3><hr>
+    <div class="card-body"> 
         <p class="text-bold m-0">1. Are you married?</p>
         <p class="ml-3">Answer: {{@$data->registerSurvey->married}}</p>
 
@@ -69,8 +49,7 @@
 
         <p class="text-bold m-0">15. Do you intend to engage in any activity against the U.S. or U.S. allies?</p>
         <p class="ml-3">Answer: {{@$data->registerSurvey->engage}}</p>
-    </div>
-    
+    </div> 
 </div>
 @endsection 
  
