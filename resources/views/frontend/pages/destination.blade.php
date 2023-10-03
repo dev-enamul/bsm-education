@@ -196,7 +196,7 @@
                         @if (isset($data->partners) && count($data->partners)>0)
                             @foreach ($data->partners as $partner)
                                 <div class="client-logo">
-                                    <img title="{{$partner->name}}" src="{{asset($partner->image??'uploads/institutes/default.jpg')}}"> 
+                                    <a href='{{route('university',$partner->name)}}'><img src="{{asset($partner->image??'uploads/institutes/default.jpg')}}"> </a>
                                 </div> 
                             @endforeach
                         @endif

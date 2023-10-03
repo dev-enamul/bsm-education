@@ -38,6 +38,8 @@ Route::get('/who-we-are', [HomeController::class, 'whoWeAre'])->name('who-we-are
 Route::get('/contact-us', [HomeController::class, 'contctUs'])->name('contact-us'); 
 Route::post('message.store', [ContactUsController::class, 'store'])->name('message.store');
 
+Route::get('university/{name}', [HomeController::class, 'university'])->name('university');
+
 Route::get('/blogs', [HomeController::class, 'blogs'])->name('frontend.blogs');
 Route::get('/blog/{slug}', [HomeController::class, 'blog'])->name('frontend.blog');
 

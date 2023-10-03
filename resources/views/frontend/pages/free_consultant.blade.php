@@ -1,17 +1,12 @@
 <section class="free-consultation-area">
     <div class="container"> 
+         
         <div class="row">
-            <div class="col-sm-12">
-                <div class="section-title text-left pb-3">
-                    <h2 class="font-weight-normal">Latest News</h2>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+            <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12"> 
                 <div class="fc-content position-relative">
+                    <h2 class="font-weight-normal">Latest News</h2>
                     <iframe src="{{$key[17]->val}}" width="500" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
-                    <button class="edit button-1 top_left" id="edit_button" onclick="getEditModal(17,'textarea')">
+                    <button class="edit button-1 top_left" id="edit_button" onclick="getEditModal(17,'textarea')" style='top:56px'>
                         <span class="edit-icon"></span>
                     </button>
                 </div><!-- logo box close -->

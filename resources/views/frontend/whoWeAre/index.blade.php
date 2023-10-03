@@ -5,10 +5,11 @@
 <section class="what-we-are-area pb-5 pt-5">
     <div class="container"> 
         <div class="row">
-            <div class="col-sm-12 pb-3">
-                <div class="title relative">
-                    <h2>Zahir Uddin Babar  <small class="">Chief Executive Officer</small></h2> 
-                </div>
+            <div class="col-sm-12 pb-3 text-center"> 
+                <div class="title relative" style="margin-bottom: -11px">
+                    <h2 class="mb-0 pb-0">Zahir Uddin Babar </h2> 
+                </div> 
+                <small class="">Chief Executive Officer</small>
             </div>
 
             <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
@@ -21,7 +22,7 @@
                 </div><!-- logo box close -->
             </div><!-- col close -->
             <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
-                <div class="wwe-content"> 
+                <div class="wwe-content">  
                     <p class="intro"> {!!$key[18]->val??''!!} </p>
                     <button class="edit button-1 top_right" id="edit_button" onclick="getEditModal(18,'textarea')" >
                         <span class="edit-icon"></span>
@@ -37,13 +38,14 @@
 <section class="what-we-are-area background-white-2 pt-5 pb-5">
     <div class="container">
 
-        <div class="row">
+        <div class="row">  
 
-            <div class="col-md-12 mb-2">
-                <div class="title-r">
-                    <h2><small>Managing Partner</small> Dr Muhit Rana</h2>
-                </div>
-            </div>
+            <div class="col-sm-12 pb-3 text-center"> 
+                <div class="title relative" style="margin-bottom: -11px">
+                    <h2 class="mb-0 pb-0"> Dr Muhit Rana </h2> 
+                </div> 
+                <small class="">Managing Partner</small>
+            </div> 
 
             <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
                 <div class="wwe-content"> 
@@ -73,11 +75,14 @@
     <div class="container">
 
         <div class="row">
-            <div class="col-sm-12 pb-3">
-                <div class="title relative">
-                    <h2>Md Saif Uddin <small>Managing Partner</small></h2> 
-                </div>
-            </div>
+           
+            <div class="col-sm-12 pb-3 text-center"> 
+                <div class="title relative" style="margin-bottom: -11px">
+                    <h2 class="mb-0 pb-0"> Md Saif Uddin </h2> 
+                </div> 
+                <small class="">Managing Partner</small>
+            </div> 
+
 
             <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
                 <div class="wwo-thumb">

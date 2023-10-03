@@ -5,11 +5,15 @@
             <div class="col-xl-3 col-lg-3 col-md-6">
                 <div class="footer-widget">                    
                     <img src="{{asset('frontend/images/logo2.png')}}" alt="" width="110px"><br>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum saepe nam reiciendis, aut earum laboriosam distinctio ipsum officiis vitae harum</p>
+                    <p class='position-relative'>{{$key[45]->val??''}} 
+                  	<button class="edit button-1 top_right" id="edit_button" onclick="getEditModal(45,'textarea')">
+                        <span class="edit-icon"></span>
+                    </button>
+                  </p>
                     <div class="social hidden-sm">
                         <h3>Socialize With Us</h3>
                         <ul class="list-inline">
-                            <li class="list-inline-item"><a href=""><i class="icofont-facebook"></i></a></li>
+                            <li class="list-inline-item"><a href="https://www.facebook.com/profile.php?id=100092170517780"><i class="icofont-facebook"></i></a></li>
                             <li class="list-inline-item"><a href=""><i class="icofont-whatsapp"></i></a></li>
                             <li class="list-inline-item"><a href=""><i class="icofont-instagram"></i></a></li>
                             <li class="list-inline-item"><a href=""><i class="icofont-youtube-play"></i></a></li>
@@ -21,12 +25,11 @@
                 <div class="footer-widget">
                     <h2>About Us</h2>
                     <ul>
-                        <li><a href=""><i class="icofont-rounded-right"></i> Meet the Team</a></li>
-                        <li><a href=""><i class="icofont-rounded-right"></i> Partner Institution</a></li>
-                        <li><a href=""><i class="icofont-rounded-right"></i> Acheivements</a></li>
-                        <li><a href=""><i class="icofont-rounded-right"></i> Blog</a></li>
-                        <li><a href=""><i class="icofont-rounded-right"></i> Free Consultation</a></li>
-                        <li><a href=""><i class="icofont-rounded-right"></i> After Visa Assistance</a></li>
+                        <li><a href="{{ url('/') }}"><i class="icofont-rounded-right"></i> Home</a></li>
+                        <li><a href="{{ route('who-we-are') }}"><i class="icofont-rounded-right"></i> Who we are</a></li> 
+                        <li><a href="{{ route('frontend.blogs') }}"><i class="icofont-rounded-right"></i> Blog</a></li>
+                        <li><a href="{{ route('contact-us') }}"><i class="icofont-rounded-right"></i> Contact</a></li> 
+                       <li><a href="{{ route('contact-us') }}"><i class="icofont-rounded-right"></i> Apply Now</a></li> 
                     </ul>
                 </div>
             </div>
@@ -34,13 +37,8 @@
                 <div class="footer-widget">
                     <h2>Services We Offer</h2>
                     <ul>
-                        <li><a href=""><i class="icofont-rounded-right"></i> USA EB-3 Green Card Program</a></li>
-                        <li><a href=""><i class="icofont-rounded-right"></i> Student Counseling</a></li>
-                        <li><a href=""><i class="icofont-rounded-right"></i> Scholarship</a></li>
-                        <li><a href=""><i class="icofont-rounded-right"></i> Student Admission</a></li>
-                        <li><a href=""><i class="icofont-rounded-right"></i> Visa Processing</a></li>
-                        <li><a href=""><i class="icofont-rounded-right"></i> Virtual Counselling</a></li>
-                        <li><a href=""><i class="icofont-rounded-right"></i> Accommodation</a></li>
+                        <li><a href="{{route('home.green_card')}}"><i class="icofont-rounded-right"></i> USA EB-3 Green Card Program</a></li>  
+                        <li><a href="{{route('home.visa.processing')}}"><i class="icofont-rounded-right"></i> Visa Processing</a></li> 
                     </ul>
                 </div>
             </div>

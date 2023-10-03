@@ -20,8 +20,8 @@
                         <div class="col-md-6"> 
                             <div class="card-body pb-0">
                                 <div class="form-group">
-                                    <label for="name">Institute Name <span class="text-danger">*</span></label>
-                                    <input type="text" name="name" class="form-control" id="name" placeholder="Enter Title" value="{{ old('name') }}" required>
+                                    <label for="name">Institute Link <span class="text-danger">*</span></label>
+                                    <input type="text" name="name" class="form-control" id="name" placeholder="Enter Link" value="{{ old('name') }}" required>
                                     @error('name')
                                         <p class="text text-danger">{{ $message }}</p>
                                     @enderror

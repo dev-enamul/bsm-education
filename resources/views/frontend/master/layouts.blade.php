@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     @include('frontend.pages.head')
+ 
   </head>
   <body>
     @include('frontend.pages.header')
@@ -10,7 +11,19 @@
      
     @include('frontend.pages.footer') 
 
-  
+    <div class="message-wrapper">
+        <div class="messenger">
+          <div title="Чат с менеджером" class="messenger-btn"><img src="https://volgo-prime.ru/img/icons/chat.svg" alt="Чат с менеджером" /></div>
+          <div id="messenger-links" class="messenger-links">
+            {{--  <a title="Позвонить" href="tel:+120345678910"><img src="https://volgo-prime.ru/img/icons/phone-icon.svg" alt="Позвонить" /></a>  --}}
+            <a target="blank" title="Whatsapp" href="https://api.whatsapp.com/send?phone=+8801877756677&text=Hi"><img src="https://volgo-prime.ru/img/icons/whatsapp-icon.svg" alt="Whatsapp" /></a>
+            {{--  <a title="Viber" href="viber://chat?number=79270000000"><img src="https://volgo-prime.ru/img/icons/viber-icon.svg" alt="Viber" /></a>  --}}
+            {{--  <a title="Telegram" href="https://t.me/romanvorozhbitov"><img src="https://volgo-prime.ru/img/icons/telegram-icon.svg" alt="Telegram" /></a>  --}}
+            <a target="blank" title="Messinger" href="https://www.facebook.com/messages/t/100092170517780"><img src="{{asset('frontend/images/icon/messenger.svg')}}" alt="Вконтакте" /></a>
+          </div>
+        </div>
+      </div>
+ 
 
     @include('frontend.modal.edit_modal')
      <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"></script> 
@@ -109,6 +122,25 @@
             "hideMethod": "fadeOut"
           }
            
+</script>
+
+<script>
+    var menuBtn = $('.messenger-btn'),
+      menu    = $('.messenger-links');
+  menuBtn.on('click', function() {
+      if ( menu.hasClass('show') ) {
+          menu.removeClass('show');
+      } else {
+          menu.addClass('show');
+      }
+  });
+  $(document).mouseup(function (e){ 
+    var div = $('.messenger'); 
+    if (!div.is(e.target) 
+        && div.has(e.target).length === 0) {
+      $('.messenger-links').removeClass('show');
+    }
+  });
 </script>
   </body>
 </html>

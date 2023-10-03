@@ -25,23 +25,49 @@
 	  color: #fff;
 	}
 	.slicknav_btn {
-	  background-color: #92278F;
+	  background-color: #044A67;
 	}
 	.slicknav_nav {
 	  width: 250px;
-	  background: #92278F;
+	  background: #044A67;
 	}
 	.slicknav_menu {
 	  display: block;
-	}
+	  z-index: 9999;
+	  position: fixed; 
+	  right: 56px;
+	} 
+
 	#menu {
-	  display: none
-	}
+	  display: none !important
+	} 
+
 	.hidden-sm{
 		display: none;
 	}
+	
 	.slicknav_nav .icofont-caret-down {
 		display: none;
+	}
+
+	.header-area{
+		display: none;
+	} 
+
+	.logo-area {
+		padding: 6px 0; 
+		position: fixed;
+		width: 100%;
+	}
+
+
+	.logo-box img {
+		max-width: 60px;
+		height: auto;
+	} 
+
+	.study-abroad-area .text-center{
+		height: 90px;
 	}
 }/* max-width: 768 close */
 

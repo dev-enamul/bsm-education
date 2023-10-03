@@ -13,7 +13,7 @@
                 <div class="col-xl-6 col-lg-6 hidden-sm">
                     <div class="top-header-right">
                         <ul class="list-inline float-right">
-                            <li class="list-inline-item"><a href=""><i class="icofont-facebook"></i></a></li>
+                            <li class="list-inline-item"><a href="https://www.facebook.com/profile.php?id=100092170517780"><i class="icofont-facebook"></i></a></li>
                             <li class="list-inline-item"><a href=""><i class="icofont-whatsapp"></i></a></li>
                             <li class="list-inline-item"><a href=""><i class="icofont-instagram"></i></a></li>
                             <li class="list-inline-item"><a href=""><i class="icofont-youtube-play"></i></a></li>
@@ -72,6 +72,7 @@
                         </li>
                         <li class="{{Route::is('frontend.blogs')?'active':''}} {{Route::is('frontend.blog')?'active':''}}"><a href="{{ route('frontend.blogs') }}">BLOG</a></li>
                         <li class="{{Route::is('contact-us')?'active':''}}"><a href="{{ route('contact-us') }}">CONTACT US</a></li>
+                      	<li class=""><button class="button-1 mr-2" style="padding: 2px;"><a href="{{ route('contact-us') }}">Apply Now</a> </button></li>
                     </ul>
                 </div>
             </div>

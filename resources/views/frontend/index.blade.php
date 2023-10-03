@@ -184,7 +184,7 @@
                     <div id="clientSlider" class="owl-carousel owl-theme cursor-pointer">
                         @foreach ($partners as $item)
                             <div class="client-logo">
-                                <img class="cursor-pointer" title="{{$item->name}}" src="{{asset($item->image)}}" alt="Partner Institute"> 
+                              <a href='{{route('university',$item->name)}}' target='blank'><img class="cursor-pointer" src="{{asset($item->image)}}" alt="Partner Institute"> </a>
                             </div>
                             
                         @endforeach

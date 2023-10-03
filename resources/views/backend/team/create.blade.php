@@ -73,7 +73,7 @@
                         <div class="col-md-6">
                             <div class="form-group"> 
                                 <img class="w-100 mb-2 mt-3" style="max-width: 215px" src="{{asset('uploads/team/default.jpg')}}" alt="" id="aa"> <br>
-                                <label for="image">Image <span class="text-danger"> <span class="text-danger">*</span> [160 X 105]</span></label>   
+                                <label for="image">Image <span class="text-danger"> <span class="text-danger">*</span> [160 X 160]</span></label>   
                                 <input type="file" name="image" class="form-control" id="image" oninput="aa.src=window.URL.createObjectURL(this.files[0])" required>
                                 @error('image')
                                     <p class="text text-danger">{{ $message }}</p>

@@ -12,7 +12,7 @@
             <tr>
                 <th style="width: 15%">Image</th>
                 <th style="width: 20%">Destination Name Name</th>
-                <th style="width:45%">Institute Name</th> 
+                <th style="width:45%">Institute Link</th> 
                 <th style="width:20%">Action</th>
             </tr>
             </thead>
